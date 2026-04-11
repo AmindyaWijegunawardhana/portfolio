@@ -11,7 +11,7 @@ import {
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-const containerVariants = {
+  const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -25,16 +25,22 @@ const containerVariants = {
   };
 
   const socialLinks = [
-    { icon: FaGithub, href: "https://github.com/AmindyaWijegunawardhana", label: "GitHub" },
-    { icon: FaLinkedin, href: "https://www.linkedin.com/in/amindya-wijegunawardhana-bab29b346/", label: "LinkedIn" },
-
+    {
+      icon: FaGithub,
+      href: "https://github.com/AmindyaWijegunawardhana",
+      label: "GitHub",
+    },
+    {
+      icon: FaLinkedin,
+      href: "https://www.linkedin.com/in/amindya-wijegunawardhana-bab29b346/",
+      label: "LinkedIn",
+    },
   ];
 
   const quickLinks = [
     { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
     { name: "Skills", href: "#skills" },
-
   ];
 
   const legal = [
@@ -50,7 +56,7 @@ const containerVariants = {
       <div className="absolute bottom-0 left-1/4 w-72 h-72 bg-neon-blue rounded-full mix-blend-screen filter blur-3xl opacity-5"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
-        {/* Main Footer Content */}}
+        {/* Main Footer Content */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
