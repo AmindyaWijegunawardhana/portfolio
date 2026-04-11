@@ -1,0 +1,24 @@
+{
+  "name": "designer-portfolio",
+  "version": "1.0.0",
+  "description": "Futuristic portfolio website for UI/UX designers",
+  "scripts": {
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
+    "start": "concurrently \"cd backend && npm start\" \"cd frontend && npm start\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install"
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "express",
+    "mongodb",
+    "ui-ux"
+  ],
+  "author": "Designer",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
