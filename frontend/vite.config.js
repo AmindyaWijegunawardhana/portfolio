@@ -20,9 +20,20 @@ export default defineConfig({
     minify: "terser",
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ["react", "react-dom"],
-          utils: ["framer-motion", "axios", "react-router-dom"],
+        manualChunks: (id) => {
+          if (id.includes("node_modules")) {
+            if (id.includes("react")) {
+              return "vendor-react";
+            }
+            if (
+              id.includes("framer-motion") ||
+              id.includes("axios") ||
+              id.includes("react-router")
+            ) {
+              return "vendor-utils";
+            }
+            return "vendor";
+          }
         },
       },
     },
