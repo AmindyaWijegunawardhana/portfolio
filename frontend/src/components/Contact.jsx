@@ -109,29 +109,6 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-
-          {/* Social Links */}
-          <motion.div
-            variants={itemVariants}
-            className="mt-12 flex justify-center gap-6"
-          >
-            {[
-              { icon: "🐙", label: "GitHub" },
-              { icon: "💼", label: "LinkedIn" },
-              { icon: "🐦", label: "Twitter" },
-              { icon: "📱", label: "Dribbble" },
-            ].map((social, index) => (
-              <motion.a
-                key={index}
-                href="#"
-                whileHover={{ scale: 1.2, rotate: 5 }}
-                whileTap={{ scale: 0.9 }}
-                className="w-12 h-12 bg-white/10 border border-gray-700 rounded-full flex items-center justify-center text-2xl hover:border-neon-blue/50 transition-all"
-              >
-                {social.icon}
-              </motion.a>
-            ))}
-          </motion.div>
         </motion.div>
       </div>
     </section>
