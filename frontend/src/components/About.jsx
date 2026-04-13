@@ -70,6 +70,25 @@ const About = () => {
                 software engineering internship.
               </p>
             </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
+              <div className="bg-white/5 backdrop-blur-md border border-neon-blue/20 rounded-xl p-4 hover:border-neon-blue/50 transition-all duration-300">
+                <div className="text-2xl font-bold text-neon-blue">50+</div>
+                <div className="text-gray-300 text-sm">Projects</div>
+              </div>
+              <div className="bg-white/5 backdrop-blur-md border border-neon-cyan/20 rounded-xl p-4 hover:border-neon-cyan/50 transition-all duration-300">
+                <div className="text-2xl font-bold text-neon-cyan">500K+</div>
+                <div className="text-gray-300">Users Impacted</div>
+              </div>
+              <div className="bg-white/5 backdrop-blur-md border border-neon-purple/20 rounded-xl p-4 hover:border-neon-purple/50 transition-all duration-300">
+                <div className="text-2xl font-bold text-neon-purple">15+</div>
+                <div className="text-gray-300">Awards & Recognition</div>
+              </div>
+              <div className="bg-white/5 backdrop-blur-md border border-pink-500/20 rounded-xl p-4 hover:border-pink-500/50 transition-all duration-300">
+                <div className="text-2xl font-bold text-pink-500">100%</div>
+                <div className="text-gray-300">Client Satisfaction</div>
+              </div>
+            </div>
           </motion.div>
         </motion.div>
 
