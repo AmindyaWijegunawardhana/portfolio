@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: portfolio
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: cd frontend && npm install && npm run build
+    startCommand: npm run preview
+    rootDir: frontend
+    envVars:
+      - key: VITE_API_URL
+        value: https://your-backend-url.com
